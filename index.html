@@ -2,7 +2,7 @@
 	<head>
 		<title> Additon app by kamal sir </title>
 		<style>
-			* {font size: 50px; font-family:cambria;}
+			* {font-size: 50px; font-family:cambria;}
 			body {background-color:azure;}
 		</style>
 	</head>
@@ -10,14 +10,15 @@
 	<center>
 		<h1>Additon App by Kamal sir</h1>
 		<form onsubmit="add()">
-			<input type = "number" step = "any" palceholder = "Enter first number" id = "num1"/>
+			<input type = "number" step = "any" placeholder = "Enter first number" id = "num1"/>
 			<br/><br/>
 			
-			<input type = "number" step = "any" palceholder = "Enter second number" id = "num2"/>
+			<input type = "number" step = "any" placeholder = "Enter second number" id = "num2"/>
 			<br/><br/>
 
 			<input type = "submit" value = "Add"/>
 		</form>
+			<h2 id = "msg"/>
 	</center>
 		
 	<script>
@@ -28,7 +29,7 @@
 			let num2 = document.getElementById("num2");
 			let msg = document.getElementById("msg");
 
-			if( num1.value ==== "")
+			if( num1.value === "")
 			{
 				alert("please enter first number");
 				msg.innerHTML="";
@@ -37,7 +38,7 @@
 			}
 
 
-			if( num2.value ==== "")
+			if( num2.value === "")
 			{
 				alert("please enter second number");
 				msg.innerHTML="";
